@@ -98,6 +98,10 @@ namespace Coffee
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller}/{action=Index}/{id?}");
+                endpoints.MapControllerRoute(
+                    name: "api",
+                    pattern: "api/{controller}/{action=Index}/{id?}");
+
                 endpoints.MapRazorPages();
             });
 
